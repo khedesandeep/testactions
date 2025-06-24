@@ -30,3 +30,9 @@ jobs:
 
       - name: 🚨 Check for failing scores
         run: node .github/scripts/evaluateReport.js
+
+      - name: 📝 Post PR comment with report
+        if: github.event_name == 'pull_request'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node .github/scripts/postComment.js

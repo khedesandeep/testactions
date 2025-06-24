@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/khedesandeep/testactions/issues"
   },
-  "homepage": "https://github.com/khedesandeep/testactions#readme"
+  "homepage": "https://github.com/khedesandeep/testactions#readme",
+  "dependencies": {
+    "codebaseguardian": "^1.0.0"
+  }
 }
