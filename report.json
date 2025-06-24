@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "file": "test-folder\\file1.js",
+    "readability": 70,
+    "maintainability": 85,
+    "testability": 100,
+    "summary": "Overly simplistic function with unclear naming but trivial logic.",
+    "recommendations": [
+      "Improve function name (e.g., 'getStaticValue' instead of 'test1') for clarity",
+      "Add JSDoc comments to explain the purpose of the function",
+      "Consider expanding into a configurable function if the return value might change in future use cases"
+    ]
+  },
+  {
+    "file": "test-folder\\file3.js",
+    "readability": 40,
+    "maintainability": 50,
+    "testability": 50,
+    "summary": "Extremely short non-descriptive variable name reduces clarity; minimal logic but side-effect dependency harms testability.",
+    "recommendations": [
+      "Use meaningful function/variable names (e.g., 'logA' instead of 'a')",
+      "Add JSDoc/comment to clarify intent if retained",
+      "Wrap console.log in a testable pattern (e.g., inject logger dependency)"
+    ]
+  }
+]
